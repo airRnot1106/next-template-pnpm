@@ -1,3 +1,6 @@
+const path = require('path');
+const rootPath = path.resolve(__dirname, '../src/');
+
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
@@ -14,4 +17,8 @@ module.exports = {
     autodocs: true,
   },
   staticDirs: ['../public'],
+  webpackFinal: async (config, { configType }) => {
+    config.resolve.alias['@'] = rootPath;
+    return config;
+  },
 };
