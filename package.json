@@ -9,6 +9,7 @@
     "lint": "next lint",
     "eslint:fix": "eslint src --ext .js,jsx,.ts,.tsx --fix",
     "prettier:fix": "prettier --check --write 'src/**/*.{js,jsx,ts,tsx,css,scss,md,mdx}'",
+    "html:lint": "markuplint src/**/*.{html,jsx,tsx}",
     "format": "pnpm run eslint:fix && pnpm run prettier:fix"
   },
   "dependencies": {
