@@ -7,14 +7,21 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
     'plugin:tailwindcss/recommended',
+    'plugin:jest/recommended',
+    'plugin:jest/style',
     'prettier',
   ],
+  env: {
+    'jest/globals': true,
+    'es6': true,
+  },
   plugins: [
     '@typescript-eslint',
     'simple-import-sort',
     'import',
     'unused-imports',
     'tailwindcss',
+    'jest',
   ],
   rules: {
     /* eslint */
@@ -177,5 +184,8 @@ module.exports = {
       },
     ],
     'tailwindcss/classnames-order': 'off',
+    /* jest */
+    'jest/consistent-test-it': ['error', { fn: 'it' }],
+    'jest/require-top-level-describe': ['error'],
   },
 };
