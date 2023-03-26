@@ -51,6 +51,7 @@ specifiers:
   jotai: ^2.0.3
   jotai-cache: ^0.3.0
   jotai-devtools: ^0.3.1
+  lucide-react: ^0.127.0
   markuplint: ^3.5.0
   next: 13.2.4
   postcss: ^8.4.21
@@ -77,6 +78,7 @@ dependencies:
   jotai: 2.0.3_react@18.2.0
   jotai-cache: 0.3.0_jotai@2.0.3
   jotai-devtools: 0.3.1_meeekrjrimng5z72dz6dvl45oe
+  lucide-react: 0.127.0_react@18.2.0
   next: 13.2.4_hrdbe576m4w26u2yfpqpvbxyky
   typescript: 5.0.2
   zod: 3.21.4
@@ -10736,6 +10738,14 @@ packages:
     dependencies:
       es5-ext: 0.10.62
     dev: true
+
+  /lucide-react/0.127.0_react@18.2.0:
+    resolution: {integrity: sha512-9xxwl2FbdwWDjB0L6FEsOSbeOVp7Pj+L3urz+xDJNx1xggmQgGjeKDJQ28i/9ON8rV9HaqwQveBtsYnHqtWLqg==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /lz-string/1.5.0:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
