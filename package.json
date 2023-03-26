@@ -12,7 +12,9 @@
     "html:lint": "markuplint src/**/*.{html,jsx,tsx}",
     "format": "pnpm run eslint:fix && pnpm run prettier:fix",
     "test": "jest --watch",
-    "test:coverage": "jest --collect-coverage"
+    "test:coverage": "jest --collect-coverage",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@types/node": "18.15.10",
