@@ -9,6 +9,7 @@ module.exports = {
     'plugin:tailwindcss/recommended',
     'plugin:jest/recommended',
     'plugin:jest/style',
+    'plugin:storybook/recommended',
     'prettier',
   ],
   env: {
