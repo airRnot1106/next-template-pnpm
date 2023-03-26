@@ -14,6 +14,7 @@ specifiers:
   '@storybook/builder-webpack5': ^6.5.16
   '@storybook/client-api': ^6.5.16
   '@storybook/manager-webpack5': ^6.5.16
+  '@storybook/preview-web': ^6.5.16
   '@storybook/react': ^6.5.16
   '@storybook/testing-library': ^0.0.13
   '@storybook/testing-react': ^1.3.0
@@ -83,9 +84,10 @@ devDependencies:
   '@storybook/builder-webpack5': 6.5.16_3okg5sz67cj64fzm2duc7o3pe4
   '@storybook/client-api': 6.5.16_biqbaboplfbrettd7655fr4n2y
   '@storybook/manager-webpack5': 6.5.16_3okg5sz67cj64fzm2duc7o3pe4
+  '@storybook/preview-web': 6.5.16_biqbaboplfbrettd7655fr4n2y
   '@storybook/react': 6.5.16_ukrghlv54eonqm64yynv2raamq
   '@storybook/testing-library': 0.0.13_biqbaboplfbrettd7655fr4n2y
-  '@storybook/testing-react': 1.3.0_237ym6qlqpcr3vbvodeuhi5kxy
+  '@storybook/testing-react': 1.3.0_c6o2fydntrt35ieirw6z6semza
   '@testing-library/dom': 9.2.0
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
@@ -3895,7 +3897,7 @@ packages:
       - react-dom
     dev: true
 
-  /@storybook/testing-react/1.3.0_237ym6qlqpcr3vbvodeuhi5kxy:
+  /@storybook/testing-react/1.3.0_c6o2fydntrt35ieirw6z6semza:
     resolution: {integrity: sha512-TfxzflxwBHSPhetWKuYt239t+1iN8gnnUN8OKo5UGtwwirghKQlApjH23QXW6j8YBqFhmq+yP29Oqf8HgKCFLw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -3908,6 +3910,7 @@ packages:
       '@storybook/addons': 6.5.16_biqbaboplfbrettd7655fr4n2y
       '@storybook/client-api': 6.5.16_biqbaboplfbrettd7655fr4n2y
       '@storybook/csf': 0.0.2--canary.87bc651.0
+      '@storybook/preview-web': 6.5.16_biqbaboplfbrettd7655fr4n2y
       '@storybook/react': 6.5.16_ukrghlv54eonqm64yynv2raamq
       react: 18.2.0
     dev: true
@@ -5700,7 +5703,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1
+      promise-inflight: 1.0.1_bluebird@3.7.2
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -11888,6 +11891,17 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
+    dev: true
+
+  /promise-inflight/1.0.1_bluebird@3.7.2:
+    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
+    peerDependencies:
+      bluebird: '*'
+    peerDependenciesMeta:
+      bluebird:
+        optional: true
+    dependencies:
+      bluebird: 3.7.2
     dev: true
 
   /promise.allsettled/1.0.6:
