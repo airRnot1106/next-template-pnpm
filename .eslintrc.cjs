@@ -6,6 +6,7 @@ module.exports = {
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
+    'plugin:tailwindcss/recommended',
     'prettier',
   ],
   plugins: [
@@ -13,6 +14,7 @@ module.exports = {
     'simple-import-sort',
     'import',
     'unused-imports',
+    'tailwindcss',
   ],
   rules: {
     /* eslint */
@@ -167,5 +169,13 @@ module.exports = {
         ],
       },
     ],
+    /* tailwindcss */
+    'tailwindcss/no-custom-classname': [
+      'warn',
+      {
+        config: 'tailwind.config.cjs',
+      },
+    ],
+    'tailwindcss/classnames-order': 'off',
   },
 };
